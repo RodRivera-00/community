@@ -1,9 +1,10 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
+    <Menu mode="horizontal" :theme="theme1" active-name="1">
+      <MenuItem name="1">
+        Charting
+      </MenuItem>
+    </Menu>
     <router-view/>
   </div>
 </template>
@@ -27,3 +28,12 @@
   }
 }
 </style>
+<script>
+    export default {
+        data () {
+            return {
+                theme1: 'dark'
+            }
+        }
+    }
+</script>
