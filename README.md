@@ -1,4 +1,4 @@
-# btc
+# Crypto Fuse
 
 ## Project setup
 ```
