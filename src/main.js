@@ -2,10 +2,12 @@ import Vue from "vue";
 import App from "./App.vue";
 import router from "./router";
 import store from "./store";
-import iView from "iview";
-import "iview/dist/styles/iview.css";
+import BootstrapVue from "bootstrap-vue";
+import "bootstrap/dist/css/bootstrap.css";
+import "bootstrap-vue/dist/bootstrap-vue.css";
+import "@/assets/css/custom.css";
 
-Vue.use(iView);
+Vue.use(BootstrapVue);
 
 Vue.config.productionTip = false;
 

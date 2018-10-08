@@ -1,39 +1,84 @@
-<template>
-  <div id="app">
-    <Menu mode="horizontal" :theme="theme1" active-name="1">
-      <MenuItem name="1">
-        Charting
-      </MenuItem>
-    </Menu>
-    <router-view/>
-  </div>
-</template>
 
-<style lang="scss">
-#app {
-  font-family: "Avenir", Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-#nav {
-  padding: 30px;
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-    &.router-link-exact-active {
-      color: #42b983;
-    }
+<template>
+    <div>
+      <b-navbar toggleable="md">
+           <b-navbar-toggle target="nav_collapse"></b-navbar-toggle>
+            <b-navbar-brand class="">Cryptofuse</b-navbar-brand>
+
+            <b-collapse is-nav id="nav_collapse">
+              <b-navbar-nav class="">
+                <b-nav-item>Charting</b-nav-item>
+                <b-nav-item>News</b-nav-item>
+                <b-nav-item>ICO</b-nav-item>
+                <b-nav-item>Exchange</b-nav-item>
+                <b-nav-item>Coin Information</b-nav-item>
+                <b-nav-item>P2P</b-nav-item>
+                <b-nav-item>Announcements</b-nav-item>
+                
+              </b-navbar-nav>
+
+              <b-navbar-nav class="ml-auto right-nav-bg">
+                  <b-nav-item v-b-modal.loginModal>Login</b-nav-item>
+              </b-navbar-nav>
+            </b-collapse>
+        </b-navbar>
+        
+        <router-view></router-view>
+        <footer>
+        
+        </footer>
+
+        <b-modal id="loginModal" size="sm">
+          <p class="my-4">Hello from modal!</p>
+        </b-modal>
+    </div>
+</template>
+<style scoped>
+ 
+  .header-wrapper {
+    background:#000;
   }
-}
+  .navbar {
+    background: #000;
+    padding: 0px;
+  }
+  .navbar-nav .nav-item a {
+    color: #fff;
+    margin: 0;
+    height: 100%;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 400;
+  }
+
+  .navbar-light .navbar-brand {
+    color: #fff;
+    background: #8d2663;
+    padding:10px 15px 10px 15px;
+   
+  }
+
+   .right-nav-bg {
+    background: #fff;
+    padding: 10px 15px 5px 15px;
+   
+  }
+
+    .right-nav-bg .nav-item a {
+     color: #000;
+     font-weight: 500;
+     color: #8d2663;
+  }
+ 
+
+  footer {
+    height: 10vh;
+    background: #000;
+  }
 </style>
+
 <script>
     export default {
-        data () {
-            return {
-                theme1: 'dark'
-            }
-        }
+        
     }
 </script>
