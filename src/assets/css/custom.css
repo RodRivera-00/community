@@ -1,0 +1,19 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Rubik', sans-serif;
+    overflow: hidden;
+}
+
+.list-group-item.active {
+    background: #e9ecef;
+    border-color: #e9ecef;
+    color: #495057;
+}
+
+.table .thead-light th {
+    font-weight: 400;
+}
