@@ -8,6 +8,25 @@ body {
     overflow: hidden;
 }
 
+.sidebar-wrapper {
+    padding-top: 50px;
+     background: #282828;
+     height: 100vh;
+    
+}
+
+.main-container {
+    background: rgba(19,19,19,1);
+    padding-top: 50px;
+}
+.search-wrapper {
+    margin-bottom: 20px;
+}
+
+.main-container .container-fluid:first-child {
+    margin-bottom: 30px;
+}
+
 .list-group-item.active {
     background: #e9ecef;
     border-color: #e9ecef;
@@ -16,4 +35,94 @@ body {
 
 .table .thead-light th {
     font-weight: 400;
+}
+
+
+.custom-tab-color {
+    color: #fff;
+    font-weight: 300;
+}
+
+
+
+.nav-tabs .nav-link.active, .nav-tabs .nav-item.show .nav-link {
+    background-color: #282828;
+    border: none;
+    color: #fff;
+    border-bottom: 5px solid #8d2663;
+
+}
+
+.nav-tabs {
+    border-bottom: none;
+}
+
+.custom-card-link {
+    color: #8d2663;
+}
+
+.custom-card-icon {
+    vertical-align: middle;
+    margin-bottom: 4px;
+    margin-left: 10px;
+}
+
+.table th, .table td {
+    border-top: none;
+}
+
+.table thead th {
+    border-bottom: none;
+}
+
+
+.vb > .vb-dragger {
+    z-index: 5;
+    width: 12px;
+    right: 0;
+}
+
+.vb > .vb-dragger > .vb-dragger-styler {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transform: rotate3d(0,0,0,0);
+    transform: rotate3d(0,0,0,0);
+    -webkit-transition:
+        background-color 100ms ease-out,
+        margin 100ms ease-out,
+        height 100ms ease-out;
+    transition:
+        background-color 100ms ease-out,
+        margin 100ms ease-out,
+        height 100ms ease-out;
+    background-color: rgba(48, 121, 244,.1);
+    margin: 5px 5px 5px 0;
+    border-radius: 20px;
+    height: calc(100% - 10px);
+    display: block;
+}
+
+.vb.vb-scrolling-phantom > .vb-dragger > .vb-dragger-styler {
+    background-color: rgba(48, 121, 244,.3);
+}
+
+.vb > .vb-dragger:hover > .vb-dragger-styler {
+    background-color: rgba(48, 121, 244,.5);
+    margin: 0px;
+    height: 100%;
+}
+
+.vb.vb-dragging > .vb-dragger > .vb-dragger-styler {
+    background-color: rgba(48, 121, 244,.5);
+    margin: 0px;
+    height: 100%;
+}
+
+.vb.vb-dragging-phantom > .vb-dragger > .vb-dragger-styler {
+    background-color: rgba(48, 121, 244,.5);
+}
+
+
+.active-link {
+    color: red;
 }

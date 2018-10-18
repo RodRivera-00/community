@@ -24,9 +24,9 @@
         </b-navbar>
         
         <router-view></router-view>
-        <footer>
+        <!-- <footer>
         
-        </footer>
+        </footer> -->
 
         <b-modal id="loginModal" size="sm">
           <p class="my-4">Hello from modal!</p>
