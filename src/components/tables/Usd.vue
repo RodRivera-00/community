@@ -17,7 +17,7 @@
         </b-row>
       <b-list-group>
       
-        <b-list-group-item :to="{path: 'charting/bitcoin'}">
+        <b-list-group-item :to="{path: 'charting/bitcoin'}" class="odd-bg">
             <b-row>
                 
                 <b-col class=" text-left">
@@ -35,7 +35,25 @@
                 </b-col>
             </b-row>
         </b-list-group-item>
-        <b-list-group-item :to="{path: 'charting/bitcoin'}">
+        <b-list-group-item :to="{path: 'charting/bitcoin'}" class="even-bg">
+            <b-row>
+                
+                <b-col class=" text-left">
+                    <small>-</small>
+                    <small>Bitcoin</small>
+                </b-col>
+                <b-col class=" text-left">
+                    500000
+                </b-col>
+                <b-col class=" text-right">
+                    3555
+                </b-col>
+                <b-col class=" text-right">
+                    10%
+                </b-col>
+            </b-row>
+        </b-list-group-item>
+        <b-list-group-item :to="{path: 'charting/bitcoin'}" class="odd-bg">
             <b-row>
                 
                 <b-col class=" text-left">
@@ -71,7 +89,7 @@
                 </b-col>
             </b-row>
         </b-list-group-item>
-        <b-list-group-item :to="{path: 'charting/bitcoin'}">
+        <b-list-group-item :to="{path: 'charting/bitcoin'}" class="odd-bg">
             <b-row>
                 
                 <b-col class=" text-left">
@@ -107,25 +125,7 @@
                 </b-col>
             </b-row>
         </b-list-group-item>
-        <b-list-group-item :to="{path: 'charting/bitcoin'}">
-            <b-row>
-                
-                <b-col class=" text-left">
-                    <small>-</small>
-                    <small>Bitcoin</small>
-                </b-col>
-                <b-col class=" text-left">
-                    500000
-                </b-col>
-                <b-col class=" text-right">
-                    3555
-                </b-col>
-                <b-col class=" text-right">
-                    10%
-                </b-col>
-            </b-row>
-        </b-list-group-item>
-        <b-list-group-item :to="{path: 'charting/bitcoin'}">
+        <b-list-group-item :to="{path: 'charting/bitcoin'}" class="odd-bg">
             <b-row>
                 
                 <b-col class=" text-left">
@@ -204,5 +204,10 @@ export default {
 
   .table-header {
       font-size: 12px;
+  }
+
+  .odd-bg {
+      background: #c6c8ca;
+      color: #222;
   }
 </style>
