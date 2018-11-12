@@ -8,9 +8,9 @@
             <b-collapse is-nav id="nav_collapse">
               <b-navbar-nav class="">
                 <b-nav-item>Charting</b-nav-item>
-                <b-nav-item>News</b-nav-item>
-                <b-nav-item>ICO</b-nav-item>
-                <b-nav-item>Exchange</b-nav-item>
+                <b-nav-item :to="{path: '/news'}">News</b-nav-item>
+                <b-nav-item :to="{path: '/ico'}">ICO</b-nav-item>
+                <b-nav-item :to="{path: '/volume'}">Volume</b-nav-item>
                 <b-nav-item>Coin Information</b-nav-item>
                 <b-nav-item>P2P</b-nav-item>
                 <b-nav-item>Announcements</b-nav-item>

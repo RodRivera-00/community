@@ -6,6 +6,11 @@
 body {
     font-family: 'Rubik', sans-serif;
     overflow: hidden;
+    background: rgba(19,19,19,1);
+}
+
+.wrapper {
+
 }
 
 .sidebar-wrapper {
@@ -124,5 +129,10 @@ body {
 
 
 .active-link {
-    color: red;
+    color: #fff;
+}
+
+.nav-link.active {
+    color: #fff !important;
+    border-bottom: 5px solid #8d2663;
 }

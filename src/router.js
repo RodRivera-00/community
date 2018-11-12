@@ -3,6 +3,9 @@ import Router from "vue-router";
 import Home from "./views/Home.vue";
 import Dashboard from "./views/Dashboard.vue";
 import Charting from "./components/Charting.vue";
+import News from "./views/News.vue";
+import Ico from "./views/Ico.vue";
+import Vol from "./views/Volume.vue";
 
 Vue.use(Router);
 
@@ -30,6 +33,20 @@ export default new Router({
     {
       path: "/charting/:id",
       component: Charting
-    }
+    },
+      {
+        path: "/news/:id",
+          component: News
+
+      },
+      {
+        path: "/ico",
+          component: Ico
+      },
+      {
+        path: "/volume",
+          component: Vol
+
+      }
   ]
 });

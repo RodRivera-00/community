@@ -18,5 +18,6 @@ new Vue({
   router,
   store,
   linkExactActiveClass: "active-link",
+    linkActiveClass: "active-link",
   render: h => h(App)
 }).$mount("#app");

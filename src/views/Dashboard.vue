@@ -34,10 +34,10 @@
 </template>
 <script>
  import sidebar from '@/components/Sidebar.vue';
- import Announcements from '@/components/Announcements.vue';
- import News from '@/components/News.vue';
- import CoinsInfo from '@/components/CoinsInfo.vue';
- import P2P from '@/components/P2P.vue';
+ import Announcements from '@/components/partials/Announcements.vue';
+ import News from '@/components/partials/News.vue';
+ import CoinsInfo from '@/components/partials/CoinsInfo.vue';
+ import P2P from '@/components/partials/P2P.vue';
  
 export default {
      components : {
