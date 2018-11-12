@@ -23,71 +23,13 @@
                         <template slot="title">
                             Cryptocurrencies
                         </template>
-                       <b-row class="pt-4">
-                           <b-col cols="1">
-                               <label class="text-white l-height">1</label>
-                           </b-col>
-                           <b-col cols="1">
-                               <label class="text-white l-height">btc</label>
-                           </b-col>
-                           <b-col cols="7" class="custom-bg">
-                               USD 0000000 / 13333 BTC
-                           </b-col>
-                           <b-col cols="3" class="bg-dark"></b-col>
-                       </b-row>
-                        <b-row class="pt-4">
-                            <b-col cols="1">
-                                <label class="text-white l-height">1</label>
-                            </b-col>
-                            <b-col cols="1">
-                                <label class="text-white l-height">btc</label>
-                            </b-col>
-                            <b-col cols="7" class="custom-bg">
-                                USD 0000000 / 13333 BTC
-                            </b-col>
-                            <b-col cols="3" class="bg-dark"></b-col>
-                        </b-row>
-                        <b-row class="pt-4">
-                            <b-col cols="1">
-                                <label class="text-white l-height">1</label>
-                            </b-col>
-                            <b-col cols="1">
-                                <label class="text-white l-height">btc</label>
-                            </b-col>
-                            <b-col cols="7" class="custom-bg">
-                                USD 0000000 / 13333 BTC
-                            </b-col>
-                            <b-col cols="3" class="bg-dark"></b-col>
-                        </b-row>
-                        <b-row class="pt-4">
-                            <b-col cols="1">
-                                <label class="text-white l-height">1</label>
-                            </b-col>
-                            <b-col cols="1">
-                                <label class="text-white l-height">btc</label>
-                            </b-col>
-                            <b-col cols="7" class="custom-bg">
-                                USD 0000000 / 13333 BTC
-                            </b-col>
-                            <b-col cols="3" class="bg-dark"></b-col>
-                        </b-row>
-                        <b-row class="pt-4">
-                            <b-col cols="1">
-                                <label class="text-white l-height">1</label>
-                            </b-col>
-                            <b-col cols="1">
-                                <label class="text-white l-height">btc</label>
-                            </b-col>
-                            <b-col cols="7" class="custom-bg">
-                                USD 0000000 / 13333 BTC
-                            </b-col>
-                            <b-col cols="3" class="bg-dark"></b-col>
-                        </b-row>
+                        <v-currencies></v-currencies>
                     </b-tab>
                     <b-tab>
                         <template slot="title">
-                            Exchange
+                            Exchanges
                         </template>
+                        <v-exchange></v-exchange>
                     </b-tab>
                 </b-tabs>
             </div>
@@ -96,9 +38,14 @@
 </template>
 <script>
     import Icon from 'vue-awesome/components/Icon.vue';
+    import Currencies from '@/components/partials/volume/Currencies.vue';
+    import Exchange from '@/components/partials/volume/Exchange.vue';
+
     export default {
         components: {
-            'v-icon' : Icon
+            'v-icon' : Icon,
+            'v-currencies' : Currencies,
+            'v-exchange' : Exchange
         }
     }
 </script>

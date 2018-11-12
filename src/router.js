@@ -6,6 +6,8 @@ import Charting from "./components/Charting.vue";
 import News from "./views/News.vue";
 import Ico from "./views/Ico.vue";
 import Vol from "./views/Volume.vue";
+import CoinInfo from "./views/CoinInfo.vue";
+import P2P from "./views/P2P.vue";
 
 Vue.use(Router);
 
@@ -47,6 +49,14 @@ export default new Router({
         path: "/volume",
           component: Vol
 
+      },
+      {
+        path: "/coin-information",
+          component: CoinInfo
+      },
+      {
+          path: "/p2p",
+          component: P2P
       }
   ]
 });

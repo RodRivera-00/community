@@ -11,8 +11,8 @@
                 <b-nav-item :to="{path: '/news'}">News</b-nav-item>
                 <b-nav-item :to="{path: '/ico'}">ICO</b-nav-item>
                 <b-nav-item :to="{path: '/volume'}">Volume</b-nav-item>
-                <b-nav-item>Coin Information</b-nav-item>
-                <b-nav-item>P2P</b-nav-item>
+                <b-nav-item :to="{path: '/coin-information'}">Coin Information</b-nav-item>
+                <b-nav-item :to="{path: '/p2p'}">P2P</b-nav-item>
                 <b-nav-item>Announcements</b-nav-item>
                 
               </b-navbar-nav>
